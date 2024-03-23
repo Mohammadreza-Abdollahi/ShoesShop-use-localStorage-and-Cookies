@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/64911f2f0b.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="src/style/main.css" />
+    <title>ProductPage</title>
+  </head>
+  <body>
+    <!-- Header Start -->
+    <header class="main-header">
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">About Us</a></li>
+          <li class="fl-right">
+            <a href="basket.html"><i class="fas fa-shopping-cart fa-lg"></i></a>
+            <span id="basket-counter" class="basket-length"></span>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Header End -->
+    <main class="main-section" id="product-holder">
+      <div id="product-page-template">
+        <br /><br /><br />
+        <section class="left-side">
+          <img src="__SRC__" alt="" />
+        </section>
+        <section class="right-side">
+          <h1 class="product-name">__NAME__</h1>
+          <h5 class="product-model">__USAGE__</h5>
+          <br />
+          <p class="product-info">__CAPTION__</p>
+          <br />
+          <div class="bottom-sec">
+            <button onclick="addToBasket()" class="add-cart">Add to Card</button
+            ><br />
+            <h1>$__PRICE__</h1>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <span>New Balance Family of Brands</span>
+      <img src="../src/image/teamsports-logo.svg" alt="" />
+      <img src="../src/image/warror.svg" alt="" />
+      <img src="../src/image/brine-logo.svg" alt="" />
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="models/ProductGenerator.js"></script>
+    <script src="models/BasketGenerator.js"></script>
+    <script src="utilities/cookies.js"></script>
+    <script src="db/ProductDB.js"></script>
+    <script src="db/BasketDB.js"></script>
+    <script src="handlers/productHandler.js"></script>
+    <script src="handlers/Basket.js"></script>
+    <script src="src/script/script.js"></script>
+    <script src="controllers/productPageCtrl.js"></script>
+    <!-- <script src="controllers/basketCounterCtrl.js"></script> -->
+  </body>
+</html>
