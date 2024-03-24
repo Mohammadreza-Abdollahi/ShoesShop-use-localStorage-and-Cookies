@@ -1,5 +1,7 @@
-Hi
-Note: This project is only for practice and cannot be used practically!
+Hi...
+Note: 
+**This project is only for practice and cannot be used practically!
+**To run this project, run it with "LiveServer"!
 
 I implemented this small project using localStorage and cookies.
 
